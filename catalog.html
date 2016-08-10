@@ -9,153 +9,164 @@
       <div class="container">
         <nav class="main-navigation">
           <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>  
-            <li>
-              <a href="#">Фото и видео</a>
-            </li>  
+            <li> <a href="#">Информация</a> </li>  
+            <li> <a href="#">Фото и видео</a> </li>  
             <li>
               <div class="index-logo">
-              <img src="img/index-logo.png" width="100" height="100" alt="Логотип Седона">
+                <img src="img/index-logo.png" width="100" height="100" alt="Логотип Седона">
               </div>
-              <a href="#">Карта штата</a>
-            </li>
-            <li>
-              <a href="#">Гостиницы</a>
-            </li>  
+            <li> <a href="#">Карта штата</a> </li>
+            <li> <a href="#">Гостиницы</a> </li>  
           </ul>  
         </nav>
       </div>
     </header>
 
     <main class="container">
-      <section class="choice">
-        <p> ИНФРАСТРУКТУРА </p>
-        <form action="#" method="get">
-          <ul>
-            <li>
-              <input type="checkbox" name="swimming-pool" checked> БАССЕЙН
-            </li>  
-            <li>
-              <input type="checkbox" name="parking"> ПАРКОВКА
-            </li>  
-            <li>  
-              <input type="checkbox" name="wi-fi"> WI-FI
-            </li>  
-          </ul>  
-        </form>
-      </section>
 
-      <section class="choice-type">
-        <p> ТИП ЖИЛЬЯ: </p>
-        <form action="#" method="get">
-          <ul>
-            <li>
-              <input type="checkbox" name="hotel" checked> ГОСТИНИЦА
-            </li>  
-            <li>
-              <input type="checkbox" name="motel" checked> МОТЕЛЬ
-            </li>  
-            <li>  
-              <input type="checkbox" name="apartments" checked> АПАРТАМЕНТЫ
-            </li>  
-          </ul>  
-        </form>
-      </section>
+      <form>
+        <fieldset>
+          <legend class="infrastructure"> ИНФРАСТРУКТУРА </legend>
+          <label> БАССЕЙН <input type="checkbox" checked> </label>
+          <label> ПАРКОВКА <input type="checkbox"> </label>
+          <label> WI-FI <input type="checkbox"> </label> 
+        </fieldset>
+        <fieldset> 
+          <legend class="type"> ТИП ЖИЛЬЯ </legend>
+          <label> БАССЕЙН <input type="checkbox" checked> </label>
+          <label> ПАРКОВКА <input type="checkbox" checked> </label>
+          <label> WI-FI <input type="checkbox" checked> </label>   
+        </fieldset>
+      </form>  
+      
+      <div class="filter-range">
+        <div class="filter-range-title"> СТОИМОСТЬ В СУТКИ (Р):</div>
+        <div class="price-controls">
+         <label class="min-price"> от <input type="text" name="min-price" value="0"> </label>
+         <label class="max-price"> до <input type="text" name="max-price" value="3000"> </label>
+        </div>
+        <div class="range-controls"> 
+          <div class="scale">
+            <div class="bar"></div>
+          </div>  
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
+        <button class="btn-transparent" type="submit"> ПОКАЗАТЬ </button>
+      </div>  
 
-      <section class="price">
-        <p> СТОИМОСТЬ В СУТКИ (Р)   <!--Пока не знаю как правильно сделать -->
-        <form action="" method="post" oninput="outputnumber.value=inputnumber.value">
-         0<input type="range" min="0" max="3000" id="inputnumber">3000
-          <output name="outputnumber"/>
-        </form>
+      <ul class="filter"> <b> Найдено: 3 </b>
+        <li> СОРТИРОВКА: </li>
+        <li> ПО ЦЕНЕ </li>   
+        <li> <a href="#"> ПО ТИПУ </a> </li> 
+        <li> <a href="#"> ПО РЕЙТИНГУ </a> </li>    
+      </ul>  
+          
+      <div class="controls"> 
+        <a class="controls-item" href="#"> UP </a><br>
+        <a class="controls-item" href="#"> DOWN </a>
+      </div> 
+
+      <section class="hotel-row">
+        <div class="hotel-image">
+          <div class="img-wrapper> 
+            <img src="http://placehold.it/150x100">
+          </div>  
+          <div class="hotel-description"> 
+            <h3> <a> AMARA RESORT & SPA </a> </h3>
+          </div>
+          <div class="hotel-text">
+            <span class="text-house"> ГОСТИНИЦА </span>
+            <span class="text-price"> ОТ 3500 Р. </span>
+          </div>
+          <div class="hotel-btns">
+            <a class="btn-blue" href="#"> ПОДРОБНЕЕ </a>
+            <a class="btn-brown" href="#"> ЗАБРОНИРОВАТЬ </a>
+          </div>
+        </div>    
+        <div class="rating">
+          <div class="rating-stars"> 
+            <span class="icon-star"> </span>
+            <span class="icon-star"> </span>
+            <span class="icon-star"> </span>
+            <span class="icon-star"> </span>
+          </div>
+          <span class="rating-count"> РЕЙТИНГ: 8,5 </span>
+        </div>
+      </section>    
+
+      <section class="hotel-row">
+        <div class="hotel-image">
+          <div class="img-wrapper> 
+            <img src="http://placehold.it/150x100">
+          </div>  
+          <div class="hotel-description"> 
+            <h3> <a> DESERT QUAIL INN </a> </h3>
+          </div>
+          <div class="hotel-text">
+            <span class="text-house"> МОТЕЛЬ </span>
+            <span class="text-price"> ОТ 2000 Р. </span>
+          </div>
+          <div class="hotel-btns">
+            <a class="btn-blue" href="#"> ПОДРОБНЕЕ </a>
+            <a class="btn-brown" href="#"> ЗАБРОНИРОВАТЬ </a>
+          </div>
+        </div>    
+        <div class="rating">
+          <div class="rating-stars"> 
+            <span class="icon-star"> </span>
+            <span class="icon-star"> </span>
+            <span class="icon-star"> </span>
+            <span class="icon-star"> </span>
+          </div>
+          <span class="rating-count"> РЕЙТИНГ: 8,9 </span>
+        </div>
       </section>  
 
-      <section class="breadcrumbs">
-        <h3> Найдено: 3 </h3>
-        <nav class="navigation">
-          <ul>
-            <li>
-              <a href="#"> СОРТИРОВКА: </a>
-            </li>
-            <li>
-              <a href="#"> ПО ЦЕНЕ </a>
-            </li>   
-            <li>
-              <a href="#"> ПО ТИПУ </a>
-            </li> 
-            <li>
-              <a href="#"> ПО РЕЙТИНГУ </a>
-            </li>    
-          </ul>  
-          <div class="display"  <!-- Здесь будут две стрелочки (вверх и вниз) -->
-            <a href="#"> UP </a><br>
-            <a href="#"> DOWN </a>
+      <section class="hotel-row">
+        <div class="hotel-image">
+          <div class="img-wrapper> 
+            <img src="http://placehold.it/150x100">
+          </div>  
+          <div class="hotel-description"> 
+            <h3> <a> VILLAS AT POCO DIABLO </a> </h3>
           </div>
-        </nav>
-      </section> 
+          <div class="hotel-text">
+            <span class="text-house"> АПАРТАМЕНТЫ </span>
+            <span class="text-price"> ОТ 4000 Р. </span>
+          </div>
+          <div class="hotel-btns">
+            <a class="btn-blue" href="#"> ПОДРОБНЕЕ </a>
+            <a class="btn-brown" href="#"> ЗАБРОНИРОВАТЬ </a>
+          </div>
+        </div>    
+        <div class="rating">
+          <div class="rating-stars"> 
+            <span class="icon-star"> </span>
+            <span class="icon-star"> </span>
+            <span class="icon-star"> </span>
+            <span class="icon-star"> </span>
+          </div>
+          <span class="rating-count"> РЕЙТИНГ: 9,2 </span>
+        </div>
+      </section>      
 
-      <section class="hotels-first">
-        <div class="hotels-item">
-          <img src="http://placehold.it/150x100">
-        <div class="name"> AMARA RESORT & SPA  
-        </div>
-        <div class="name-item"> ГОСТИНИЦА
-          <p> <span class="features"> <a href="#"> ПОДРОБНЕЕ </a> </span> </p>
-        </div>  
-        <div class="name-item"> ОТ 3500 Р.
-          <p> <span class="reservation"> <a href="#"> ЗАБРОНИРОВАТЬ </a> </span> </p>
-        </div> 
-        <div class="rating"> <a href="#"> РЕЙТИНГ: 8,5 </a>
-        </div>
-      </section>   
-
-      <section class="hotels-second">
-        <div class="hotels-item">
-          <img src="http://placehold.it/150x100">
-        <div class="name"> DESERT QUAIL INN 
-        </div>
-        <div class="name-item"> МОТЕЛЬ
-          <p> <span class="features"> <a href="#"> ПОДРОБНЕЕ </a> </span> </p>
-        </div>  
-        <div class="name-item"> ОТ 2000 Р.
-          <p> <span class="reservation"> <a href="#"> ЗАБРОНИРОВАТЬ </a> </span> </p>
-        </div> 
-        <div class="rating"> <a href="#"> РЕЙТИНГ: 8,9 </a>
-        </div>
-      </section>   
-
-      <section class="hotels-third">
-        <div class="hotels-item">
-          <img src="http://placehold.it/150x100">
-        <div class="name"> VILLAS AT POCO DIABLO 
-        </div>
-        <div class="name-item"> АПАРТАМЕНТЫ
-          <p> <span class="features"> <a href="#"> ПОДРОБНЕЕ </a> </span> </p>
-        </div>  
-        <div class="name-item"> ОТ 4000 Р.
-          <p> <span class="reservation"> <a href="#"> ЗАБРОНИРОВАТЬ </a> </span> </p>
-        </div> 
-        <div class="rating"> <a href="#"> РЕЙТИНГ: 9,2 </a>
-        </div>
-      </section>   
+    </main>  
 
       <footer class="main-footer">
         <div class="container">
-          <section class="footer-contacts">
+          <div class="footer-contacts">
             <b> #VISITSEDONA
-          </section>
-          <section class="footer-social">
+          </div>
+          <div class="footer-social">
             <a class="social-btn social-btn-vk" href="#">Твиттер</a>
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-inst" href="#">Ютуб</a>
-          </section>
-          <section class="footer-copyright">
+          </div>
+          <div class="footer-copyright">
             <a class="btn" href="https://htmlacademy.ru">WEBSYTE BY HTML Academy</a>
-          </section>
+          </div>
         </div>
-      </footer>
-    </main>  
+      </footer> 
   </body>
 </html>
