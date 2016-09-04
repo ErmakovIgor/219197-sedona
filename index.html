@@ -4,116 +4,180 @@
 <head>
     <meta charset="utf-8">
     <title> Седона </title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="container">
-            <nav class="main-navigation">
-                <ul>
-                    <li> <a href="#"> Информация </a> </li>
-                    <li> <a href="#"> Фото и видео </a> </li>
-                    <li>
-                        <div class="index-logo">
-                            <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
-                        </div>
-                        <li> <a href="#"> Карта штата </a> </li>
-                        <li> <a href="#"> Гостиницы </a> </li>
-                </ul>
-            </nav>
-        </div>
+    <div class="main-container">
+        <header class="main-header">
+            <div class="container">
+                <nav class="main-navigation">
+                    <a class="index-logo">
+                        <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
+                    </a>
+                    <ul>
+                        <li> <a class="top" href="#">Информация</a> </li>
+                        <li> <a class="top" href="#">Фото и видео</a> </li>
+                        <li> <a class="top" href="catalog.html">Гостиницы</a> </li>
+                        <li> <a class="top" href="#">Карта штата</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <div class="promo">
-            <img src="img/background.jpg" width="1200" height="780">
+            <img src="img/background.jpg" width="1200" height="508" alt="Седона">
         </div>
-    </header>
-    <main class="page-content">
-        <div class="information">
-            <h2> СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО! </h2>
-            <p> РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН! </p>
-        </div>
-        <section class="reasons clearfix">
-            <div class="main-reasons">
-                <b> НАСТОЯЩИЙ ГОРОДОК </b>
-                <p class="reasons-text"> <span> -№1- </span>
-                    <br> СЕДОНА- НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        <main class="page-content">
+            <div class="information">
+                <h2 class="information-title"> СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО! </h2>
+                <p class="look"> РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН! </p>
             </div>
-            <div class="reasons-picture">
-                <img src="img/picture1.jpg" width="800" height="256">
+            <section class="reasons clearfix">
+                <div class="main-reasons-left">
+                    <b class="features-column-left-h2"> НАСТОЯЩИЙ ГОРОДОК </b>
+                    <p class="reasons-number"> <span> - №1 - </span></p>
+                    <p class="reasons-text"> СЕДОНА- НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,
+                        <br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                </div>
+                <div class="reasons-picture-right">
+                    <img src="img/picture1.jpg" width="800" height="256" alt="Городок">
+                </div>
+            </section>
+            <section class="features clearfix">
+                <div class="features-item">
+                    <img src="img/1.png" width="75" height="72" alt="Дом">
+                    <p class="features-name">Жилье</p>
+                    <p class="advice"> РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО! </p>
+                </div>
+                <div class="features-item">
+                    <img src="img/2.png" width="74" height="70" alt="Гамбургер">
+                    <p class="features-name">Еда</p>
+                    <p class="advice"> ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ! </p>
+                </div>
+                <div class="features-item">
+                    <img src="img/3.png" width="64" height="76" alt="Подарок">
+                    <p class="features-name">Сувениры</p>
+                    <p class="advice"> НЕ ТОЛЬКО КИТАЙСКОГО НО И МЕСТНОГО ПРОИЗВОДСТВА! </p>
+                </div>
+            </section>
+            <section class="reasons">
+                <div class="reasons-picture-left">
+                    <img src="img/picture2.jpg" width="800" height="256" alt="Мост Дьявола">
+                </div>
+                <div class="main-reasons-right">
+                    <b class="features-column-right-h2"> ТАМ ЕСТЬ <br> МОСТ ДЬЯВОЛА </b>
+                    <p class="reasons-number"> <span> - №2 - </span>
+                        <p class="reasons-text"> ДА, ПО НЕМУ МОЖНО ПРОЙТИ, ЕСЛИ КОНЕЧНО
+                            <br> ВЫ ОСМЕЛИТЕСЬ! </p>
+                </div>
+            </section>
+            <section class="reasons-features">
+                <div class="reasons-title">
+                    <p class="features-name-down"> НЕБОЛЬШАЯ ПЛОЩАДЬ </p>
+                    <p class="reasons-number-down"> <span> -№3- </span></p>
+                    <p class="reasons-text">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ
+                        <br>НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО </p>
+                </div>
+                <div class="reasons-title">
+                    <p class="features-name-down"> КРАСИВАЯ
+                        <br>ДОРОГА </p>
+                    <p class="reasons-number-down"> <span> -№4- </span></p>
+                    <p class="reasons-text"> ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ
+                        <br> НЕ СКУЧНО! </p>
+                </div>
+                <div class="reasons-title">
+                    <p class="features-name-down"> МАЛО
+                        <br>ТУРИСТОВ </p>
+                    <p class="reasons-number-down"> <span> -№5- </span></p>
+                    <p class="reasons-text">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КОНЬОН И ТОЛПИТСЯ ТАМ </p>
+                </div>
+            </section>
+            <div class="white-block">
+                <div class="booking-content">
+                    <b class="booking-title"> ЗАИНТЕРЕСОВАЛИСЬ? </b>
+                    <p class="booking-content-text"> УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,
+                        <br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ </p>
+                    <h2 class="form-title">
+                    ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
+                </h2>
+                </div>
             </div>
-        </section>
-        <section class="features clearfix">
-            <div class="features-item">
-                <img src="img/1.png" width="75" height="72">
-                <b class="features-name">Жилье</b>
-                <p> РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО! </p>
-            </div>
-            <div class="features-item">
-                <img src="img/2.png" width="74" height="70">
-                <b class="features-name">Еда</b>
-                <p> ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ! </p>
-            </div>
-            <div class="features-item">
-                <img src="img/3.png" width="64" height="76">
-                <b class="features-name">Сувениры</b>
-                <p> НЕ ТОЛЬКО КИТАЙСКОГО НО И МЕСТНОГО ПРОИЗВОДСТВА! </p>
-            </div>
-        </section>
-        <section class="reasons">
-            <div class="reasons-picture">
-                <img src="img/picture2.jpg" width="800" height="256">
-            </div>
-            <div class="main-reasons">
-                <b> ТАМ ЕСТЬ МОСТ ДЬЯВОЛА </b>
-                <p class="reasons-text"> <span> -№2- </span>
-                    <br> ДА, ПО НЕМУ МОЖНО ПРОЙТИ, ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ! </p>
-            </div>
-        </section>
-        <section class="reasons-features">
-            <div class="reasons-title">
-                <b> НЕБОЛЬШАЯ ПЛОЩАДЬ </b>
-                <p class="reasons-text"> <span> -№3- </span>
-                    <br> ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО </p>
-            </div>
-            <div class="reasons-title">
-                <b> КРАСИВАЯ ДОРОГА </b>
-                <p class="reasons-text"> <span> -№4- </span>
-                    <br> ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО! </p>
-            </div>
-            <div class="reasons-title">
-                <b> МАЛО ТУРИСТОВ </b>
-                <p class="reasons-text"> <span> -№5- </span>
-                    <br> БОЛЬШИНСТВО ЕДЕТ В ГРАНД КОНЬОН И ТОЛПИТСЯ ТАМ </p>
-            </div>
-        </section>
-        <div class="white-block">
-            <b> ЗАИНТЕРЕСОВАЛИСЬ? </b>
-            <p> УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ </p>
-            <a href="#"> ПОИСК ГОСТИНИЦ В СЕДОНЕ </a>
-        </div>
-        <section>
-            <img src="img/map.jpg" width="1200" height="593">
-        </section>
-    </main>
-    <footer class="main-footer">
-        <div class="container clearfix">
+            <section>
+                <img src="img/map.jpg" width="1200" height="474" alt="Карта">
+            </section>
+        </main>
+        <footer class="main-footer clearfix">
             <div class="footer-contacts">
-                <b> #VISITSEDONA </b>
+                <b class="contacts-left"> #VISITSEDONA </b>
             </div>
             <div class="footer-social">
-                <a class="social-btn social-btn-vk" href="#">Твиттер</a>
-                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                <a class="social-btn social-btn-inst" href="#">Ютуб</a>
+                <ul class="footer-social-list">
+                    <li class="social-item">
+                        <a class="social-btn sprite sprite-tv" href="#">Твиттер</a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-btn sprite sprite-fb" href="#">Фейсбук</a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-btn sprite sprite-yt" href="#">Ютуб</a>
+                    </li>
+                </ul>
             </div>
             <div class="footer-copyright">
-                <a class="btn" href="https://htmlacademy.ru">WEBSYTE BY 
-              <img src="img/academy.png" width="113" height="39"></a>
+                <p> WEBSYTE BY </p>
+                <a href="https://htmlacademy.ru">
+               
+                    <!-- <img class="academy" src="img/academy.png" width="113" height="39" alt="Академия">--></a> 
             </div>
-        </div>
+        </footer>
         <div class="popup">
-            <a href="catalog.html"> Попап </a>
+            <form class="form-sedona">
+                <div class="form-content">
+                    <label for="form-content-check-in">Дата заезда:</label>
+                    <div class="input-form">
+                        <input type="text" class="form-date" id="form-content-check-in" name="date-arrive" placeholder="24 апреля 2016" value="">
+                        <span href="#" class="calendar"></span>
+                    </div>
+                </div>
+                <div class="form-content">
+                    <label for="form-content-check-out">Дата выезда:</label>
+                    <div class="input-form">
+                        <input type="text" class="form-date" id="form-content-check-out" name="date-departure" placeholder="4 июля 2016" value="">
+                        <span href="#" class="calendar"></span>
+                    </div>
+                </div>
+                <div class="form-content-people">
+                    <label for="adults">Взрослые:</label>
+                    <div class="input-form-left">
+                        <button><i class="minus"></i></button>
+                        <input class="form-number" name="adults-number" id="adults" placeholder="2" value="">
+                        <button><i class="plus"></i></button>
+                    </div>
+                    <label for="children">Дети:</label>
+                    <div class="input-form-right">
+                        <button><i class="minus"></i></button>
+                        <input class="form-number" name="children-number" id="children" placeholder="0" value="">
+                        <button> <i class="plus"></i></button>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-big">Найти</button>
+            </form>
         </div>
-    </footer>
+    </div>    
+        <script type="text/javascript">
+        var link = document.querySelector(".form-title");
+        var popup = document.querySelector(".popup");
+        
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            if (popup.classList.contains("popup-show")){
+              popup.classList.remove("popup-show");  
+            } else {
+              popup.classList.add("popup-show");  
+            }
+        });
+        </script>
 </body>
-
 </html>
