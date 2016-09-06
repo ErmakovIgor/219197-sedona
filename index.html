@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title> Седона </title>
@@ -100,7 +101,40 @@
                         <br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ </p>
                     <h2 class="form-title">
                     ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
-                </h2>
+                    </h2>
+                    <div class="popup">
+                        <form class="form-sedona">
+                            <div class="form-content">
+                                <label for="form-content-check-in">Дата заезда:</label>
+                                <div class="input-form">
+                                    <input type="text" class="form-date" id="form-content-check-in" name="date-arrive" placeholder="24 апреля 2016" value="">
+                                    <span class="calendar"></span>
+                                </div>
+                            </div>
+                            <div class="form-content">
+                                <label for="form-content-check-out">Дата выезда:</label>
+                                <div class="input-form">
+                                    <input type="text" class="form-date" id="form-content-check-out" name="date-departure" placeholder="4 июля 2016" value="">
+                                    <span class="calendar"></span>
+                                </div>
+                            </div>
+                            <div class="form-content-people">
+                                <label for="adults">Взрослые:</label>
+                                <div class="input-form-left">
+                                    <button><i class="minus"></i></button>
+                                    <input class="form-number" name="adults-number" id="adults" placeholder="2" value="">
+                                    <button><i class="plus"></i></button>
+                                </div>
+                                <label for="children" class="right-children">Дети:</label>
+                                <div class="input-form-right">
+                                    <button><i class="minus"></i></button>
+                                    <input class="form-number" name="children-number" id="children" placeholder="0" value="">
+                                    <button> <i class="plus"></i></button>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-big">Найти</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <section>
@@ -126,55 +160,23 @@
             </div>
             <div class="footer-copyright">
                 <p> WEBSYTE BY </p>
-                <a href="https://htmlacademy.ru"></a> 
+                <a href="https://htmlacademy.ru"></a>
             </div>
         </footer>
-        <div class="popup">
-            <form class="form-sedona">
-                <div class="form-content">
-                    <label for="form-content-check-in">Дата заезда:</label>
-                    <div class="input-form">
-                        <input type="text" class="form-date" id="form-content-check-in" name="date-arrive" placeholder="24 апреля 2016" value="">
-                        <span href="#" class="calendar"></span>
-                    </div>
-                </div>
-                <div class="form-content">
-                    <label for="form-content-check-out">Дата выезда:</label>
-                    <div class="input-form">
-                        <input type="text" class="form-date" id="form-content-check-out" name="date-departure" placeholder="4 июля 2016" value="">
-                        <span href="#" class="calendar"></span>
-                    </div>
-                </div>
-                <div class="form-content-people">
-                    <label for="adults">Взрослые:</label>
-                    <div class="input-form-left">
-                        <button><i class="minus"></i></button>
-                        <input class="form-number" name="adults-number" id="adults" placeholder="2" value="">
-                        <button><i class="plus"></i></button>
-                    </div>
-                    <label for="children" class="right-children">Дети:</label>
-                    <div class="input-form-right">
-                        <button><i class="minus"></i></button>
-                        <input class="form-number" name="children-number" id="children" placeholder="0" value="">
-                        <button> <i class="plus"></i></button>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-big">Найти</button>
-            </form>
-        </div>
-    </div>    
-        <script type="text/javascript">
-        var link = document.querySelector(".form-title");
-        var popup = document.querySelector(".popup");
-        
-        link.addEventListener("click", function(event) {
-            event.preventDefault();
-            if (popup.classList.contains("popup-show")){
-              popup.classList.remove("popup-show");  
-            } else {
-              popup.classList.add("popup-show");  
-            }
-        });
-        </script>
+    </div>
+    <script type="text/javascript">
+    var link = document.querySelector(".form-title");
+    var popup = document.querySelector(".popup");
+
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        if (popup.classList.contains("popup-show")) {
+            popup.classList.remove("popup-show");
+        } else {
+            popup.classList.add("popup-show");
+        }
+    });
+    </script>
 </body>
+
 </html>
