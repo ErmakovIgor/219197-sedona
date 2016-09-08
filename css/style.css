@@ -115,7 +115,6 @@ h3 {
 }
 
 .main-navigation li:first-child {
-    float: left;
     text-align: left;
     width: 20%;
     display: inline-block;
@@ -129,7 +128,6 @@ h3 {
 }
 
 .main-navigation li:nth-child(2) {
-    float: left;
     text-align: left;
     width: 20%;
     display: inline-block;
@@ -338,14 +336,17 @@ h3 {
 }
 
 .form-title {
+    display: block;
     width: 568px;
     height: 86px;
     background-color: #766357;
     color: white;
     font-size: 21px;
     line-height: 26px;
+    font-weight: 700;
     padding-top: 30px;
     margin-left: -40px;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -771,6 +772,7 @@ background-position: -615px -50px;
 
 .hotel-text {
     float: left;
+    width:290px;
     margin-top: 22px;
 }
 
