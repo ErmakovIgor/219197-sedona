@@ -91,7 +91,8 @@ h3 {
 .index-logo {
     position: absolute;
     text-align: center;
-    background: no-repeat width: 138px;
+    background: no-repeat;
+    width: 138px;
     height: 70px;
     top: 0px;
     left: 50%;
@@ -254,11 +255,49 @@ h3 {
     padding: 16px 0 0 0;
 }
 
-.reasons-text {
+.reasons-text-1 {
     display: block;
+    width: 295px;
     font-size: 14px;
     font-weight: 400;
-    padding: 23px 37px 25px 35px;
+    padding-top: 21px;
+    margin: auto;
+}
+
+.reasons-text-2 {
+    display: block;
+    width: 315px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 23px;
+    margin: auto;
+}
+
+.reasons-text-3 {
+    display: block;
+    width: 220px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 23px;
+    margin: auto;
+}
+
+.reasons-text-4 {
+    display: block;
+    width: 275px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 23px;
+    margin: auto;
+}
+
+.reasons-text-5 {
+    display: block;
+    width: 300px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 23px;
+    margin: auto;
 }
 
 .reasons-picture-right {
